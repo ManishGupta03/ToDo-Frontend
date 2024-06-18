@@ -1,0 +1,267 @@
+{
+	"info": {
+		"_postman_id": "e57d723c-d4a8-4be5-bb1a-a4083b2098b7",
+		"name": "Tech-Eagle",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25929628"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Manish1\",\r\n    \"email\":\"manishgupta1@gmail.com\",\r\n    \"username\":\"Manish1\",\r\n    \"password\":\"Manish1\"\r\n   \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9999/auth/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9999",
+					"path": [
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"loginId\":\"manishgupta2@gmail.com\",\r\n      \"password\":\"Manish2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9999/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9999",
+					"path": [
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Logout",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9999/auth/logout",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9999",
+					"path": [
+						"auth",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NmViZjM4ZTVjNjdlMzYxODM1OGYzZSIsIm5hbWUiOiJNYW5pc2gyIiwiZW1haWwiOiJtYW5pc2hndXB0YTJAZ21haWwuY29tIiwiaWF0IjoxNzE4NTg5OTAxLCJleHAiOjE3MTg1OTM1MDF9.oyj0SdrkG0ok9P_BjZg5uB031ezj-8u0rdNZJ9iZ4W0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Manish3\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9999/activity/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9999",
+					"path": [
+						"activity",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteActivity",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NmViZjM4ZTVjNjdlMzYxODM1OGYzZSIsIm5hbWUiOiJNYW5pc2gyIiwiZW1haWwiOiJtYW5pc2hndXB0YTJAZ21haWwuY29tIiwiaWF0IjoxNzE4NTk1OTk3LCJleHAiOjE3MTg1OTk1OTd9.kJo5aENVHKyS5_MoNRMEMfGl4LNH2dkY_VGLPM9MghU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9999/activity/delete/666fa27e4d8523d6d772faf8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9999",
+					"path": [
+						"activity",
+						"delete",
+						"666fa27e4d8523d6d772faf8"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NmViZjM4ZTVjNjdlMzYxODM1OGYzZSIsIm5hbWUiOiJNYW5pc2gyIiwiZW1haWwiOiJtYW5pc2hndXB0YTJAZ21haWwuY29tIiwiaWF0IjoxNzE4NTk2MjM3LCJleHAiOjE3MTg1OTk4Mzd9.rPvxOvBows2GqZZDWpGwPF2_XWZLIgs9OWNtUaqoA6E",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"NewStart Bhai\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9999/activity/666fb205547161aa86d8c387/action",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9999",
+					"path": [
+						"activity",
+						"666fb205547161aa86d8c387",
+						"action"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllActivity",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9999/activity/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9999",
+					"path": [
+						"activity",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateActivity",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"updated Value\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9999/activity/666fb205547161aa86d8c387",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9999",
+					"path": [
+						"activity",
+						"666fb205547161aa86d8c387"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getSpecificActivity",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9999/activity/666fb205547161aa86d8c387",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9999",
+					"path": [
+						"activity",
+						"666fb205547161aa86d8c387"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
